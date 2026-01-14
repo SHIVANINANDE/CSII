@@ -1,0 +1,71 @@
+.solutions-section {
+    background-color: var(--surface);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.quote {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+.tabs-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.tab-btn {
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: 2px solid var(--primary);
+    background: transparent;
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab-btn.active,
+.tab-btn:hover {
+    background: var(--primary);
+    color: white;
+    box-shadow: 0 4px 12px rgba(211, 47, 47, 0.3);
+}
+
+.solution-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+    border-left: 4px solid transparent;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.solution-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-left-color: var(--primary);
+}
+
+.card-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--accent);
+}
+
+.solution-card h4 {
+    color: var(--secondary);
+    font-size: 1.1rem;
+    margin: 0;
+}

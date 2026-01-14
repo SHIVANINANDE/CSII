@@ -1,0 +1,65 @@
+.platform-section {
+    background: linear-gradient(180deg, var(--surface) 0%, var(--surface-dark) 100%);
+    color: white;
+}
+
+.platform-subtitle {
+    text-align: center;
+    max-width: 700px;
+    margin: -1.5rem auto 4rem;
+    color: var(--text-light);
+    /* Will appear grey on dark bg? Need to check */
+}
+
+/* Override text color for dark section */
+.platform-section .section-title {
+    -webkit-text-fill-color: unset;
+    background: unset;
+    color: white;
+}
+
+.platform-section .section-title::after {
+    background: var(--accent);
+}
+
+.platform-section .platform-subtitle {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.2rem;
+}
+
+.feature-card {
+    padding: 2.5rem;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.icon-wrapper {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.feature-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.feature-card p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.95rem;
+}
